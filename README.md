@@ -61,39 +61,41 @@ The pipeline consists of the following steps:
 
 ## Repository Structure
 
+```
 kaust_tdp43_chr20_rnaseq_study/
 │
 ├── data/
-│ └── sample_metadata.csv
+│   └── sample_metadata.csv
 │
 ├── qc_reports/
-│ ├── fastqc_raw/
-│ ├── fastqc_trimmed/
-│ ├── fastp/
-│ └── multiqc/
+│   ├── fastqc_raw/
+│   ├── fastqc_trimmed/
+│   ├── fastp/
+│   └── multiqc/
 │
 ├── salmon_quant/
-│ ├── KO_1/
-│ ├── KO_2/
-│ ├── KO_3/
-│ ├── WT_1/
-│ ├── WT_2/
-│ └── WT_3/
+│   ├── KO_1/
+│   ├── KO_2/
+│   ├── KO_3/
+│   ├── WT_1/
+│   ├── WT_2/
+│   └── WT_3/
 │
 ├── results/
-│ ├── tables/
-│ ├── figures/
-│ └── plots/
+│   ├── tables/
+│   ├── figures/
+│   └── plots/
 │
 ├── scripts/
-│ ├── 00_setup_kaust_20CH.sh
-│ ├── 01_qc_fastqc.sh
-│ ├── 02_trimming_fastp.sh
-│ ├── 03_quant_salmon.sh
-│ ├── 05_deseq2.R
-│ └── analysis utilities
+│   ├── 00_setup_kaust_20CH.sh
+│   ├── 01_qc_fastqc.sh
+│   ├── 02_trimming_fastp.sh
+│   ├── 03_quant_salmon.sh
+│   ├── 05_deseq2.R
+│   └── analysis utilities
 │
 └── README.md
+```
 
 
 ---
