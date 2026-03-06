@@ -1,0 +1,13 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	KO_1_SRR10045016_1	/home/babas/kaust_20CH/qc_reports/fastqc_raw/KO_1_SRR10045016_1_fastqc.zip
+FastQC	all_sections	KO_1_SRR10045016_2	/home/babas/kaust_20CH/qc_reports/fastqc_raw/KO_1_SRR10045016_2_fastqc.zip
+FastQC	all_sections	KO_2_SRR10045017_1	/home/babas/kaust_20CH/qc_reports/fastqc_raw/KO_2_SRR10045017_1_fastqc.zip
+FastQC	all_sections	KO_2_SRR10045017_2	/home/babas/kaust_20CH/qc_reports/fastqc_raw/KO_2_SRR10045017_2_fastqc.zip
+FastQC	all_sections	KO_3_SRR10045018_1	/home/babas/kaust_20CH/qc_reports/fastqc_raw/KO_3_SRR10045018_1_fastqc.zip
+FastQC	all_sections	KO_3_SRR10045018_2	/home/babas/kaust_20CH/qc_reports/fastqc_raw/KO_3_SRR10045018_2_fastqc.zip
+FastQC	all_sections	WT_1_SRR10045019_1	/home/babas/kaust_20CH/qc_reports/fastqc_raw/WT_1_SRR10045019_1_fastqc.zip
+FastQC	all_sections	WT_1_SRR10045019_2	/home/babas/kaust_20CH/qc_reports/fastqc_raw/WT_1_SRR10045019_2_fastqc.zip
+FastQC	all_sections	WT_2_SRR10045020_1	/home/babas/kaust_20CH/qc_reports/fastqc_raw/WT_2_SRR10045020_1_fastqc.zip
+FastQC	all_sections	WT_2_SRR10045020_2	/home/babas/kaust_20CH/qc_reports/fastqc_raw/WT_2_SRR10045020_2_fastqc.zip
+FastQC	all_sections	WT_3_SRR10045021_1	/home/babas/kaust_20CH/qc_reports/fastqc_raw/WT_3_SRR10045021_1_fastqc.zip
+FastQC	all_sections	WT_3_SRR10045021_2	/home/babas/kaust_20CH/qc_reports/fastqc_raw/WT_3_SRR10045021_2_fastqc.zip

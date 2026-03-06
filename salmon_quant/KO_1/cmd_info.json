@@ -1,0 +1,10 @@
+{
+    "salmon_version": "1.10.3",
+    "index": "references/salmon_index",
+    "libType": "A",
+    "mates1": "trimmed_data/KO_1_1.trim.fastq.gz",
+    "mates2": "trimmed_data/KO_1_2.trim.fastq.gz",
+    "threads": "8",
+    "output": "salmon_quant/KO_1",
+    "auxDir": "aux_info"
+}

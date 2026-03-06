@@ -1,0 +1,22 @@
+{
+    "read_files": "[ trimmed_data/KO_3_1.trim.fastq.gz, trimmed_data/KO_3_2.trim.fastq.gz]",
+    "expected_format": "ISR",
+    "compatible_fragment_ratio": 1.0,
+    "num_compatible_fragments": 1081543,
+    "num_assigned_fragments": 1081543,
+    "num_frags_with_concordant_consistent_mappings": 1068341,
+    "num_frags_with_inconsistent_or_orphan_mappings": 13562,
+    "strand_mapping_bias": 0.00002901611049334876,
+    "MSF": 0,
+    "OSF": 0,
+    "ISF": 31,
+    "MSR": 0,
+    "OSR": 0,
+    "ISR": 1068341,
+    "SF": 5983,
+    "SR": 7548,
+    "MU": 0,
+    "OU": 0,
+    "IU": 0,
+    "U": 0
+}
