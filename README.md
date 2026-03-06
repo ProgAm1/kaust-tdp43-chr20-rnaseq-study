@@ -140,7 +140,7 @@ Large files such as raw sequencing reads and genome references are excluded from
 
 ## Author
 
-Abdullah Misar  
+Ammar Babaset  
 KAUST Bioinformatics Program
 
 ## Key Results
