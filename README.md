@@ -153,10 +153,10 @@ Principal Component Analysis (PCA) was performed on variance-stabilized counts t
 
 The MA plot illustrates the relationship between mean gene expression and log2 fold change, highlighting significantly differentially expressed genes.
 
-![MA Plot](results/figures/MA_plot.pdf)
+![MA Plot](results/figures/MA_plot.png)
 
 ### Volcano Plot
 
 The volcano plot summarizes differential expression results by combining statistical significance and magnitude of gene expression change.
 
-![Volcano Plot](results/figures/Volcano_plot.pdf)
+![Volcano Plot](results/figures/Volcano_plot.png)
