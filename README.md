@@ -24,6 +24,7 @@ This repository is associated with our preprint:
 Research Square (Preprint)  
 [Read the paper on Research Square](https://www.researchsquare.com/article/rs-9077001/v1)
 
+[View PDF](docs/tdp43_chr20_paper.pdf)
 ---
 
 ## Dataset
