@@ -140,7 +140,11 @@ Large files such as raw sequencing reads and genome references are excluded from
 
 ## Author
 
-Ammar Babaset  
+Ammar Yasir Babasit
+Almokhtar Akeel S. Aljarodi
+Abdullah Eyad Abdullah
+Ahmad Abdullah A. Bukhamsin
+
 KAUST Bioinformatics Program
 
 ## Key Results
