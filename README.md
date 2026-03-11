@@ -1,33 +1,43 @@
-# KAUST TDP43 chr20 RNA-seq Study
+# KAUST TDP-43 chr20 RNA-seq Study
 
-This repository contains an RNA-seq analysis pipeline developed as part of the KAUST Bioinformatics Program.  
-The project focuses on transcriptomic changes associated with **TDP-43 knockout (KO)** samples with a specific focus on **chromosome 20 (chr20)**.
+This repository contains an RNA-seq analysis pipeline developed as part of the **KAUST Bioinformatics Program**.  
+The project investigates transcriptomic changes associated with **TDP-43 knockout (KO)**, with a specific focus on **chromosome 20 (chr20)**.
 
-The workflow covers the full RNA-seq processing pipeline including quality control, read trimming, transcript quantification, differential expression analysis, and downstream visualization.
+The workflow covers the major stages of RNA-seq analysis, including quality control, read trimming, transcript quantification, differential expression analysis, and downstream visualization.
 
 ---
 
 ## Project Overview
 
-TDP-43 is an RNA-binding protein implicated in several neurodegenerative diseases.  
-This study analyzes RNA-seq data from **TDP-43 knockout (KO)** and **wild-type (WT)** samples to identify gene expression changes associated with the loss of TDP-43.
+TDP-43 is an RNA-binding protein implicated in multiple neurodegenerative diseases.  
+In this study, we analyze RNA-seq data from **TDP-43 knockout (KO)** and **wild-type (WT)** samples to identify gene expression changes associated with loss of TDP-43 function.
 
-The analysis emphasizes genes located on **chromosome 20**, enabling targeted investigation of transcriptomic changes within this genomic region.
+The analysis specifically emphasizes genes located on **chromosome 20**, enabling a targeted investigation of transcriptomic alterations within this genomic region.
+
+---
+
+## Related Preprint
+
+This repository is associated with our preprint:
+
+**Chromosome 20 RNA-seq Analysis: TDP-43 Knockout vs Wild-Type Rescue**  
+Research Square (Preprint)  
+[Read the paper on Research Square](https://www.researchsquare.com/article/rs-9077001/v1)
 
 ---
 
 ## Dataset
 
-RNA-seq data consist of paired-end sequencing reads from:
+The RNA-seq dataset consists of paired-end sequencing reads from:
 
-- **KO samples:** KO_1, KO_2, KO_3  
-- **WT samples:** WT_1, WT_2, WT_3  
+- **KO samples:** `KO_1`, `KO_2`, `KO_3`
+- **WT samples:** `WT_1`, `WT_2`, `WT_3`
 
-Metadata describing the samples can be found in:
+Sample metadata can be found in:
 
+- `data/sample_metadata.csv`
 
-
-Raw sequencing data and reference genomes are not included in this repository due to size limitations but can be reproduced using the provided scripts.
+Raw sequencing reads and reference genome files are not included in this repository due to size limitations. However, the analysis can be reproduced using the provided scripts and metadata.
 
 ---
 
@@ -36,8 +46,8 @@ Raw sequencing data and reference genomes are not included in this repository du
 The pipeline consists of the following steps:
 
 1. **Quality Control**
-   - FastQC for raw read quality assessment
-   - MultiQC for aggregated quality reports
+   - Raw read quality assessment using **FastQC**
+   - Aggregated QC summary using **MultiQC**
 
 2. **Read Trimming**
    - Adapter removal and quality trimming using **fastp**
@@ -46,22 +56,22 @@ The pipeline consists of the following steps:
    - Transcript-level quantification using **Salmon**
 
 4. **Differential Expression Analysis**
-   - Import quantifications with **tximport**
+   - Import of transcript quantifications using **tximport**
    - Differential expression analysis using **DESeq2**
 
 5. **Chromosome 20 Filtering**
-   - Extract genes located on chr20 for focused analysis
+   - Extraction of genes located on **chr20** for focused downstream analysis
 
-6. **Visualization and Results**
+6. **Visualization**
    - PCA plot for sample clustering
-   - MA plot for expression changes
-   - Volcano plot for differential expression
+   - MA plot for differential expression overview
+   - Volcano plot for significance vs fold change visualization
 
 ---
 
 ## Repository Structure
 
-```
+```text
 kaust_tdp43_chr20_rnaseq_study/
 │
 ├── data/
@@ -92,66 +102,33 @@ kaust_tdp43_chr20_rnaseq_study/
 │   ├── 02_trimming_fastp.sh
 │   ├── 03_quant_salmon.sh
 │   ├── 05_deseq2.R
-│   └── analysis utilities
+│   └── analysis_utilities/
 │
 └── README.md
 ```
 
-
 ---
 
 ## Key Results
 
-Differential expression analysis identified several genes significantly affected by TDP-43 knockout.
+Differential expression analysis identified several genes significantly affected by **TDP-43 knockout**.
 
 Main outputs include:
 
 - **DESeq2 differential expression tables**
+- **PCA plot**
 - **MA plot**
 - **Volcano plot**
-- **PCA visualization of sample clustering**
 
-Results can be found in:
+Result files can be found in:
 
-
----
-
-## Tools Used
-
-The analysis pipeline uses the following tools:
-
-- FastQC
-- fastp
-- MultiQC
-- Salmon
-- tximport
-- DESeq2
-- R / Python for downstream analysis
-
----
-
-## Reproducibility
-
-The scripts in the `scripts/` directory allow the analysis to be reproduced step-by-step starting from raw FASTQ files through differential expression analysis.
-
-Large files such as raw sequencing reads and genome references are excluded from the repository.
-
----
-
-## Author
-
-Ammar Yasir Babasit
-Almokhtar Akeel S. Aljarodi
-Abdullah Eyad Abdullah
-Ahmad Abdullah A. Bukhamsin
-
-KAUST Bioinformatics Program
-
-## Key Results
+- `results/tables/`
+- `results/figures/`
+- `results/plots/`
 
 ### PCA Plot
 
-Principal Component Analysis (PCA) was performed on variance-stabilized counts to visualize sample clustering and overall transcriptomic differences between conditions.
+Principal Component Analysis (PCA) was performed on variance-stabilized counts to visualize sample clustering and transcriptomic differences between conditions.
 
 ![PCA Plot](results/plots/PCA_VST.png)
 
@@ -166,3 +143,37 @@ The MA plot illustrates the relationship between mean gene expression and log2 f
 The volcano plot summarizes differential expression results by combining statistical significance and magnitude of gene expression change.
 
 ![Volcano Plot](results/figures/Volcano_plot.png)
+
+---
+
+## Tools Used
+
+The analysis pipeline uses the following tools:
+
+- **FastQC**
+- **fastp**
+- **MultiQC**
+- **Salmon**
+- **tximport**
+- **DESeq2**
+- **R**
+- **Python**
+
+---
+
+## Reproducibility
+
+The scripts in the `scripts/` directory allow the workflow to be reproduced step-by-step, starting from raw FASTQ files through transcript quantification and differential expression analysis.
+
+Large files such as raw sequencing data and genome references are excluded from the repository.
+
+---
+
+## Authors
+
+- Ammar Yasir Babasit
+- Almokhtar Akeel S. Aljarodi
+- Abdullah Eyad Abdullah
+- Ahmad Abdullah A. Bukhamsin
+
+**KAUST Bioinformatics Program**
