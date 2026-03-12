@@ -170,6 +170,20 @@ Large files such as raw sequencing data and genome references are excluded from 
 
 ---
 
+## Citation
+
+If you use this repository or build upon this work, please cite the following preprint:
+
+**Aljarodi, A. A. S., Babasit, A. Y., Abdullah, A. E., & Bukhamsin, A. A. A.**  
+*Chromosome 20 RNA-seq Analysis: TDP-43 Knockout vs Wild-Type Rescue.*  
+Research Square (Preprint), 2025.  
+DOI: [10.21203/rs.3.rs-9077001/v1](https://doi.org/10.21203/rs.3.rs-9077001/v1)  
+License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+
+> ⚠️ This is a preprint and has not yet been peer reviewed.
+
+---
+
 ## Authors
 
 - Ammar Yasir Babasit
